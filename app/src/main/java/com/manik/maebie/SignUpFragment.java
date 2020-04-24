@@ -3,10 +3,10 @@ package com.manik.maebie;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -19,8 +19,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-
-import org.w3c.dom.Text;
 
 
 /**
@@ -148,19 +146,13 @@ public class SignUpFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ///todo  :send data to firebase
-
            //check email and password validation
-
                 checkEmailAndPassword();
             }
         });
 
 
     }
-
-
-
-
 
     private void setfragment(Fragment fragment1){
         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
