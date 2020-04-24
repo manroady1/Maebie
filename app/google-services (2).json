@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1016203362746",
+    "firebase_url": "https://maebie-6114e.firebaseio.com",
+    "project_id": "maebie-6114e",
+    "storage_bucket": "maebie-6114e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016203362746:android:6a56517c92627acec01d83",
+        "android_client_info": {
+          "package_name": "com.manik.maebie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016203362746-5t1jamrnci965sjgrp3bscqinidr1ebc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkI8PGWCC-dMpA4Ov4GfemBdm9k3QBFaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016203362746-5t1jamrnci965sjgrp3bscqinidr1ebc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
