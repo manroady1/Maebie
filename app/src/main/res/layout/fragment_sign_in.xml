@@ -4,21 +4,33 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerInside"
+                android:src="@drawable/clikkart_logo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="match_parent" />
+
+
             <LinearLayout
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="50dp"
                 android:paddingRight="@dimen/_30sdp"
                 android:paddingLeft="@dimen/_30sdp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <LinearLayout
                     android:layout_weight=".8"
                     android:layout_width="match_parent"
@@ -38,7 +50,7 @@
                     android:layout_weight=".2"
                     android:singleLine="true"
                     android:maxLines="1"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:ems="10"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="#7344bad4"
@@ -85,6 +97,7 @@
                     android:background="@color/transparent"
                     android:gravity="center"
                     android:layout_weight=".1"
+                    android:textSize="20dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="#7344bad4"
                     android:hint="@string/password"

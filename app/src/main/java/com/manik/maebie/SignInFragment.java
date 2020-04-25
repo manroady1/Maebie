@@ -42,6 +42,9 @@ public class SignInFragment extends Fragment {
 
     private EditText email;
     private EditText password;
+
+    private TextView  forgotpassword;
+
     private TextView signinbtn;
     private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+.[a-z]+";
     private ProgressBar progressBar;
@@ -55,6 +58,8 @@ public class SignInFragment extends Fragment {
        View view  =  inflater.inflate(R.layout.fragment_sign_in, container, false);
        donthaveanaccount = view.findViewById(R.id.NewUser);
        parentFrameLayout = getActivity().findViewById(R.id.register_framelayout);
+
+       forgotpassword = view.findViewById(R.id.sign_in_forgot_password);
 
        email = view.findViewById(R.id.sign_in_email);
        password = view.findViewById(R.id.sign_in_password);
@@ -75,6 +80,14 @@ public class SignInFragment extends Fragment {
                 setfragment(new SignUpFragment());
             }
         });
+
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setfragment(new ResetPasswordFragment());
+            }
+        });
+
         email.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
