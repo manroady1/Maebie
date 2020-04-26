@@ -26,6 +26,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import static com.manik.maebie.RegisterActivity.onResetPassfragment;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -84,6 +86,7 @@ public class SignInFragment extends Fragment {
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                onResetPassfragment = true;
                 setfragment(new ResetPasswordFragment());
             }
         });
